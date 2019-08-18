@@ -1,0 +1,15 @@
+<ul>
+  <% @posts.each do |post| %>
+    <li><%= link_to post.description, post_path(post) %></li>
+  <% end %>
+</ul>
+
+<table>
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= link_to post.description, post_path(post) %></td>
+      <td><%= button_to 'Edit', edit_post_path(post), method: 'get'%></td>
+      <td><%= button_to 'Remove', post_path(post), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New Post", new_post_path %>
