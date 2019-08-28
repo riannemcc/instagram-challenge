@@ -9,7 +9,7 @@ This was a weekend challenge during week 8 of [Makers](https://makers.tech/).
 
 Steps to use this app:  
 
-1. `git clone https://github.com/riannemcc/instagram-challenge.git`  
+1. `git clone git@github.com:riannemcc/instagram-challenge.git`  
 2. `Bundle install` (to install the required gems)  
 3. `rails db:migrate`  
 
